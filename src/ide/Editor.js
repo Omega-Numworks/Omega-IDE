@@ -1365,9 +1365,9 @@ export default class IDEEditor extends Component {
                     </LeftBarTop>
                     <LeftBarBottom>
                         <LeftBarAction img={this.state.connector.getUserPhotoURL()} icon="account_circle" />
-                        <Link to={this.props.base}>
+                        <a href={this.props.base}>
                             <LeftBarAction icon="exit_to_app" />
-                        </Link>
+                        </a>
                     </LeftBarBottom>
                 </LeftBar>
                 {menues}
