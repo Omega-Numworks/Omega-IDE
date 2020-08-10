@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link, Redirect} from "react-router-dom";
-import GithubConnector from "../GithubConnector";
+import '../sass/omega.ide.sass'
 
 import File from './components/File';
 import Project from './components/Project';
@@ -23,7 +23,7 @@ export default class IDEEditor extends Component {
         document.title = "Omega - IDE";
 
         this.state = {
-            connector: GithubConnector.getInstance(),
+            connector: props.connector.getInstance(),
             logged: null,
             tabs: [],
             selected_tab: 0,
