@@ -51,7 +51,8 @@ export default class IDEEditor extends Component {
             confirm_popup_file: null,
             locked: false,
             simulator: null,
-            calculator: null
+            calculator: null,
+            omega_theme: false
         };
 
         this.simulator = <iframe title="Simulator" src={this.props.base + "simulator"} ref={(ref) => this.simulatorRef = ref} width="256px" height="192px" />;
@@ -101,6 +102,8 @@ export default class IDEEditor extends Component {
         this.handleCalculatorDelete = this.handleCalculatorDelete.bind(this);
         this.handleCalculatorZipDownload = this.handleCalculatorZipDownload.bind(this);
         this.handleClaculatorSend = this.handleClaculatorSend.bind(this);
+
+        this.toggleTheme = this.toggleTheme.bind(this);
 
         this.calculator = null;
         if (navigator.usb !== undefined) {
@@ -1337,7 +1340,13 @@ export default class IDEEditor extends Component {
             });
         }
     }
-    
+
+    toggleTheme() {
+        this.setState({
+            omega_theme: !this.state.omega_theme
+        });
+    }
+
     renderLeftBar() {
         let actions = [];
         let menues = [];
@@ -1454,7 +1463,7 @@ export default class IDEEditor extends Component {
 
     renderEditor() {
         return (
-            <div onContextMenu={(e) => {e.preventDefault(); e.stopPropagation()}} className={"editor "+ (this.state.locked ? " editor_locked" : "")}>
+            <div onContextMenu={(e) => {e.preventDefault(); e.stopPropagation()}} className={"editor " + (this.state.omega_theme ? "editor-omega-theme " : "") + (this.state.locked ? " editor_locked" : "")}>
                 {/* Loading */}
                 <Loader hidden={true}/>
 
@@ -1473,6 +1482,7 @@ export default class IDEEditor extends Component {
                     <BottomBarElement icon="play_arrow" hoverable={true} onClick={this.handleSimuReload}>Simulator</BottomBarElement>
                     <BottomBarElement icon="usb" hoverable={true} locked={this.calculator === null} onClick={this.handleClaculatorSend}>Device</BottomBarElement>
                     <BottomBarElement icon="highlight_off" hoverable={true}>0</BottomBarElement>
+                    <BottomBarElement onClick={this.toggleTheme} icon="invert_colors" hoverable={true}>Omega Theme</BottomBarElement>
                     <BottomBarElement right={true}>Powered by Omega</BottomBarElement>
                 </BottomBar>
 
