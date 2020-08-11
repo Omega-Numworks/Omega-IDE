@@ -6,44 +6,25 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "electron": "^9.2.0",
     "firebase": "^7.17.2",
     "jszip": "^3.5.0",
     "node-sass": "^4.14.1",
     "numworks.js": "^1.1.0",
+    "nw-react-scripts": "3.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-monaco-editor": "^0.39.1",
     "react-resize-detector": "^5.0.7",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "webusb": "^2.0.2"
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
-    "start": "nf start -p 3000",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "electron": "electron .",
-    "electron-start": "node src/start-react",
-    "react-start": "BROWSER=none react-scripts start",
-    "pack": "build --dir",
-    "dist": "npm run build && build",
-    "postinstall": "install-app-deps"
-  },
-  "homepage": "./",
-  "main": "src/start.js",
-  "build": {
-    "appId": "io.github.omega.ide",
-    "win": {
-      "iconUrl": "./public/logo192.png"
-    },
-    "directories": {
-      "buildResources": "public"
-    }
+    "start": "nw-react-scripts start",
+    "build": "nw-react-scripts build",
+    "test": "nw-react-scripts test",
+    "eject": "nw-react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "nw-react-app"
   },
   "browserslist": {
     "production": [
@@ -57,7 +38,18 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "electron-builder": "^22.8.0"
+  "main": "index.html",
+  "nwBuilder": {
+    "//": "https://github.com/nwjs-community/nw-builder",
+    "platforms": [
+      "osx64",
+      "win32",
+      "win64"
+    ],
+    "version": "latest",
+    "flavor": "normal",
+    "buildDir": "./build",
+    "cacheDir": "./cache",
+    "macIcns": "./src/logo.icns"
   }
 }
