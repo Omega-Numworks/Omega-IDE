@@ -519,13 +519,7 @@ export default class IDEEditor extends Component {
 
     componentDidMount() {
         // Hide the cookies think
-        let ccrevokes = document.getElementsByClassName("cc-revoke");
-
-        for(let i = 0; i < ccrevokes.length; i++) {
-            ccrevokes[i].style.display = "none"
-        }
-
-        let ccgrowers = document.getElementsByClassName("cc-grower");
+        let ccgrowers = document.getElementsByClassName("cookiesconsent");
 
         for(let i = 0; i < ccgrowers.length; i++) {
             ccgrowers[i].style.display = "none"

@@ -18,8 +18,7 @@ export default class Simulator extends Component {
     }
     
     componentDidMount() {
-        if (document.getElementsByClassName("cc-bottom").length > 0)   document.getElementsByClassName("cc-bottom")[0].style.display = "none";
-        if (document.getElementsByClassName("cc-grower").length > 0)   document.getElementsByClassName("cc-grower")[0].style.display = "none";
+        if (document.getElementsByClassName("cookiesconsent").length > 0)   document.getElementsByClassName("cookiesconsent")[0].style.display = "none";
         if (document.getElementsByClassName("header").length > 0)      document.getElementsByClassName("header")[0].style.display = "none";
         if (document.getElementsByClassName("footer").length > 0)      document.getElementsByClassName("footer")[0].style.display = "none";
     }
