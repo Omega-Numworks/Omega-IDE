@@ -98,8 +98,6 @@ export default class GithubConnector {
 
         let output = [];
         for (let name in projects) {
-            let project = projects[name];
-
             output.push({
                 "name": name,
                 "files": [],

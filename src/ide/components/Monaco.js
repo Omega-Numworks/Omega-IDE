@@ -15,10 +15,19 @@ export default class Monaco extends Component {
         
         this.handleChange = this.handleChange.bind(this);
         this.editorDidMount = this.editorDidMount.bind(this);
+        this.handleResize = this.handleResize.bind(this);
     }
 
     editorDidMount(editor, monaco) {
-        
+        this.setState({
+            editor: editor,
+            monaco: monaco
+        });
+    }
+    
+    handleResize() {
+        if (this.state.editor !== null)
+            this.state.editor.layout();
     }
     
     handleChange(newValue, e) {
@@ -28,8 +37,8 @@ export default class Monaco extends Component {
 
     render() {
         return (
-            <div className="editor__panel__monaco">
-                <ReactResizeDetector handleWidth handleHeight>
+            <ReactResizeDetector handleWidth handleHeight onResize={this.handleResize}>
+                <div className="editor__panel__monaco">
                     <MonacoEditor
                         ref="monaco"
                         width="100%"
@@ -40,8 +49,8 @@ export default class Monaco extends Component {
                         onChange={this.handleChange}
                         editorDidMount={this.editorDidMount}
                     />
-                </ReactResizeDetector>
-            </div>
+                </div>
+            </ReactResizeDetector>
         )
     }
 }
