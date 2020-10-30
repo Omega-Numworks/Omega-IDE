@@ -409,6 +409,7 @@ export default class IDEEditor extends Component {
         }
 
         if (this.state.projects[project_id].loaded) {
+            this.simulatorRef.contentWindow.location.reload();
             var event = new CustomEvent("reload-simu", {'detail': {'scripts': this.state.projects[project_id].files}});
             this.simulatorRef.contentWindow.document.dispatchEvent(event);
 
