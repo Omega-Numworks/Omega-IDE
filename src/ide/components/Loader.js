@@ -19,7 +19,7 @@ const funny_phrases = [
     "Courant janvier...",
     "Comming soon™",
     "<INSERT TEXT>",
-    "Ever wrote code drunk on a first on january?",
+    "Ever wrote code drunk on a first of january?",
     "Tester c'est douter...",
     "Corriger c'est abdiquer...",
     "Did you clean?",
@@ -33,7 +33,16 @@ const funny_phrases = [
     "Write clean code or draw 25...",
     "\"Regression testing\"? What is that? If it compiles it's cool, if it boots up it's perfect.",
     "Kernel panic: tried to kill init",
-    "Signal SIGSEGV: Segmentation fault"
+    "Signal SIGSEGV: Segmentation fault",
+    "Moderators at 100 members",
+    "Numworks won QCC 2020",
+    "Hazma.S™ 500mg",
+    "Quentin at the window",
+    "It's a god damn simulator!",
+    "The boricjs",
+    "LavaOS go brrrr",
+    "At first, he added back symbolic calculation, and then...",
+    "We do a math firmware without understang its maths engine"
 ];
 
 export default class Loader extends Component {
