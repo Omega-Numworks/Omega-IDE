@@ -24,6 +24,7 @@ export default class IDEEditor extends Component {
 
         this.state = {
             connector: props.connector.getInstance(),
+            vercel: props.vercel === true,
             logged: null,
             tabs: [],
             selected_tab: 0,
@@ -1484,7 +1485,7 @@ export default class IDEEditor extends Component {
                     <BottomBarElement icon="usb" hoverable={true} locked={this.calculator === null} onClick={this.handleClaculatorSend}>Device</BottomBarElement>
                     <BottomBarElement icon="highlight_off" hoverable={true}>0</BottomBarElement>
                     <BottomBarElement onClick={this.toggleTheme} icon="invert_colors" hoverable={true}>Omega Theme</BottomBarElement>
-                    <BottomBarElement right={true}>Powered by Omega</BottomBarElement>
+                    <BottomBarElement right={true}>Powered by Omega {this.state.vercel ? " - Hosted by Vercel" : ""}</BottomBarElement>
                 </BottomBar>
 
                 {this.state.confirm_popup_file !== null ? this.renderConfirmPopUp() : ""}

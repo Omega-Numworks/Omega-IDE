@@ -10,7 +10,7 @@ function App() {
       <Router>
         <div className="body">
           <Switch>
-            <Route path="/" component={() => <Editor base="/" connector={LocalStorageConnector} />} exact />
+            <Route path="/" component={() => <Editor base="/" connector={LocalStorageConnector} vercel={false} />} exact />
             <Route path="/simulator" component={Simulator} exact />
           </Switch>
         </div>
