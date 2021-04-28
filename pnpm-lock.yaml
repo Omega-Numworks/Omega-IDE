@@ -1,17 +1,70 @@
 dependencies:
+  '@babel/core': 7.9.0
+  '@svgr/webpack': 4.3.3
   '@testing-library/jest-dom': 4.2.4
   '@testing-library/react': 9.5.0_react-dom@16.14.0+react@16.14.0
   '@testing-library/user-event': 7.2.1
+  '@typescript-eslint/eslint-plugin': 2.34.0_984cbb313f9ea271f36cadd8f9814e06
+  '@typescript-eslint/parser': 2.34.0_eslint@6.8.0
+  babel-eslint: 10.1.0_eslint@6.8.0
+  babel-jest: 24.9.0_@babel+core@7.9.0
+  babel-loader: 8.1.0_@babel+core@7.9.0+webpack@4.42.0
+  babel-plugin-named-asset-import: 0.3.7_@babel+core@7.9.0
+  babel-preset-react-app: 9.1.2
+  camelcase: 5.3.1
+  case-sensitive-paths-webpack-plugin: 2.3.0
+  css-loader: 3.4.2_webpack@4.42.0
+  dotenv: 8.2.0
+  dotenv-expand: 5.1.0
+  eslint: 6.8.0
+  eslint-config-nw-react-app: 5.2.1_f8f91f27f800428497667fb337aaf85d
+  eslint-loader: 3.0.3_eslint@6.8.0+webpack@4.42.0
+  eslint-plugin-flowtype: 4.6.0_eslint@6.8.0
+  eslint-plugin-import: 2.20.1_eslint@6.8.0
+  eslint-plugin-jsx-a11y: 6.2.3_eslint@6.8.0
+  eslint-plugin-react: 7.19.0_eslint@6.8.0
+  eslint-plugin-react-hooks: 1.7.0_eslint@6.8.0
+  file-loader: 4.3.0_webpack@4.42.0
   firebase: 7.24.0
+  fs-extra: 8.1.0
+  html-webpack-plugin: 4.0.0-beta.11_webpack@4.42.0
+  identity-obj-proxy: 3.0.0
+  jest: 24.9.0
+  jest-environment-jsdom-fourteen: 1.0.1
+  jest-resolve: 24.9.0
+  jest-watch-typeahead: 0.4.2
   jszip: 3.6.0
+  mini-css-extract-plugin: 0.9.0_webpack@4.42.0
+  monaco-editor-webpack-plugin: 3.0.1_webpack@4.42.0
   node-sass: 4.14.1
   numworks.js: 1.1.0
-  nw-react-scripts: 3.4.1_node-sass@4.14.1
+  nw-builder: 3.5.7
+  optimize-css-assets-webpack-plugin: 5.0.3_webpack@4.42.0
+  pnp-webpack-plugin: 1.6.4
+  postcss-flexbugs-fixes: 4.1.0
+  postcss-loader: 3.0.0
+  postcss-normalize: 8.0.1
+  postcss-preset-env: 6.7.0
+  postcss-safe-parser: 4.0.1
   react: 16.14.0
+  react-app-polyfill: 1.0.6
+  react-dev-utils: 10.2.1
   react-dom: 16.14.0_react@16.14.0
   react-monaco-editor: 0.39.1_react@16.14.0
   react-resize-detector: 5.2.0_react-dom@16.14.0+react@16.14.0
   react-router-dom: 5.2.0_react@16.14.0
+  resolve: 1.15.0
+  resolve-url-loader: 3.1.1
+  sass-loader: 8.0.2_node-sass@4.14.1+webpack@4.42.0
+  semver: 6.3.0
+  style-loader: 0.23.1
+  terser-webpack-plugin: 2.3.5_webpack@4.42.0
+  ts-pnp: 1.1.6
+  url-loader: 2.3.0_file-loader@4.3.0+webpack@4.42.0
+  webpack: 4.42.0
+  webpack-dev-server: 3.10.3_webpack@4.42.0
+  webpack-manifest-plugin: 2.2.0_webpack@4.42.0
+  workbox-webpack-plugin: 4.3.1_webpack@4.42.0
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.12.13:
@@ -45,7 +98,7 @@ packages:
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       lodash: 4.17.21
-      resolve: 1.15.0
+      resolve: 1.20.0
       semver: 5.7.1
       source-map: 0.5.7
     dev: false
@@ -1114,11 +1167,11 @@ packages:
       '@babel/plugin-proposal-async-generator-functions': 7.13.15_@babel+core@7.9.0
       '@babel/plugin-proposal-dynamic-import': 7.13.8_@babel+core@7.9.0
       '@babel/plugin-proposal-json-strings': 7.13.8_@babel+core@7.9.0
-      '@babel/plugin-proposal-nullish-coalescing-operator': 7.8.3_@babel+core@7.9.0
-      '@babel/plugin-proposal-numeric-separator': 7.8.3_@babel+core@7.9.0
+      '@babel/plugin-proposal-nullish-coalescing-operator': 7.13.8_@babel+core@7.9.0
+      '@babel/plugin-proposal-numeric-separator': 7.12.13_@babel+core@7.9.0
       '@babel/plugin-proposal-object-rest-spread': 7.13.8_@babel+core@7.9.0
       '@babel/plugin-proposal-optional-catch-binding': 7.13.8_@babel+core@7.9.0
-      '@babel/plugin-proposal-optional-chaining': 7.9.0_@babel+core@7.9.0
+      '@babel/plugin-proposal-optional-chaining': 7.13.12_@babel+core@7.9.0
       '@babel/plugin-proposal-unicode-property-regex': 7.12.13_@babel+core@7.9.0
       '@babel/plugin-syntax-async-generators': 7.8.4_@babel+core@7.9.0
       '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.9.0
@@ -1203,7 +1256,7 @@ packages:
     dependencies:
       '@babel/core': 7.9.0
       '@babel/helper-plugin-utils': 7.13.0
-      '@babel/plugin-transform-react-display-name': 7.8.3_@babel+core@7.9.0
+      '@babel/plugin-transform-react-display-name': 7.12.13_@babel+core@7.9.0
       '@babel/plugin-transform-react-jsx': 7.13.12_@babel+core@7.9.0
       '@babel/plugin-transform-react-jsx-development': 7.12.17_@babel+core@7.9.0
       '@babel/plugin-transform-react-jsx-self': 7.12.13_@babel+core@7.9.0
@@ -2868,7 +2921,7 @@ packages:
       '@babel/types': 7.13.17
       eslint: 6.8.0
       eslint-visitor-keys: 1.3.0
-      resolve: 1.15.0
+      resolve: 1.20.0
     dev: false
     engines:
       node: '>=6'
@@ -2945,7 +2998,7 @@ packages:
       integrity: sha512-2EMA2P8Vp7lG0RAzr4HXqtYwacfMErOuv1U3wrvxHX6rD1sV6xS3WXG3r8TRQ2r6w8OhvSdWt+z41hQNwNm3Xw==
   /babel-plugin-macros/2.8.0:
     dependencies:
-      '@babel/runtime': 7.9.0
+      '@babel/runtime': 7.13.17
       cosmiconfig: 6.0.0
       resolve: 1.20.0
     dev: false
@@ -5031,7 +5084,7 @@ packages:
       minimatch: 3.0.4
       object.values: 1.1.3
       read-pkg-up: 2.0.0
-      resolve: 1.15.0
+      resolve: 1.20.0
     dev: false
     engines:
       node: '>=4'
@@ -5848,16 +5901,6 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==
-  /fsevents/2.1.2:
-    deprecated: '"Please update to latest v2.3 or v2.2"'
-    dev: false
-    engines:
-      node: ^8.16.0 || ^10.6.0 || >=11.0.0
-    optional: true
-    os:
-      - darwin
-    resolution:
-      integrity: sha512-R4wDiBwZ0KzpgOWetKDug1FZcYhqYnUYKtfZYt4mD5SBz76q0KR4Q9o7GIPamsVPGmW3EYPPJ0dOOjvx32ldZA==
   /fsevents/2.3.2:
     dev: false
     engines:
@@ -8010,6 +8053,16 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==
+  /loader-utils/2.0.0:
+    dependencies:
+      big.js: 5.2.2
+      emojis-list: 3.0.0
+      json5: 2.2.0
+    dev: false
+    engines:
+      node: '>=8.9.0'
+    resolution:
+      integrity: sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
   /locate-path/2.0.0:
     dependencies:
       p-locate: 2.0.0
@@ -8504,6 +8557,16 @@ packages:
     dev: false
     resolution:
       integrity: sha1-z4tP9PKWQGdNbN0CsOO8UjwrvcA=
+  /monaco-editor-webpack-plugin/3.0.1_webpack@4.42.0:
+    dependencies:
+      loader-utils: 2.0.0
+      webpack: 4.42.0
+    dev: false
+    peerDependencies:
+      monaco-editor: 0.22.x || 0.23.x
+      webpack: ^4.5.0 || 5.x
+    resolution:
+      integrity: sha512-Hym4HqWgIpyoi9G0spln/b/7rkDKfYwIOrNzo1fHHMc+MLYSwD1JXHwKSDS77X27ZHfVJsEXbMZYdGhSYuVF0w==
   /monaco-editor/0.23.0:
     dev: false
     resolution:
@@ -8841,75 +8904,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-7LTQu8oom56xdDeyoUygZytxvyWuh+pw4nY4eFMGUd7/m/eOdAs/6UZjav6CbjnyIg8n4FtwnjCXXLsFI6Ooug==
-  /nw-react-scripts/3.4.1_node-sass@4.14.1:
-    dependencies:
-      '@babel/core': 7.9.0
-      '@svgr/webpack': 4.3.3
-      '@typescript-eslint/eslint-plugin': 2.34.0_984cbb313f9ea271f36cadd8f9814e06
-      '@typescript-eslint/parser': 2.34.0_eslint@6.8.0
-      babel-eslint: 10.1.0_eslint@6.8.0
-      babel-jest: 24.9.0_@babel+core@7.9.0
-      babel-loader: 8.1.0_@babel+core@7.9.0+webpack@4.42.0
-      babel-plugin-named-asset-import: 0.3.7_@babel+core@7.9.0
-      babel-preset-react-app: 9.1.2
-      camelcase: 5.3.1
-      case-sensitive-paths-webpack-plugin: 2.3.0
-      css-loader: 3.4.2_webpack@4.42.0
-      dotenv: 8.2.0
-      dotenv-expand: 5.1.0
-      eslint: 6.8.0
-      eslint-config-nw-react-app: 5.2.1_f8f91f27f800428497667fb337aaf85d
-      eslint-loader: 3.0.3_eslint@6.8.0+webpack@4.42.0
-      eslint-plugin-flowtype: 4.6.0_eslint@6.8.0
-      eslint-plugin-import: 2.20.1_eslint@6.8.0
-      eslint-plugin-jsx-a11y: 6.2.3_eslint@6.8.0
-      eslint-plugin-react: 7.19.0_eslint@6.8.0
-      eslint-plugin-react-hooks: 1.7.0_eslint@6.8.0
-      file-loader: 4.3.0_webpack@4.42.0
-      fs-extra: 8.1.0
-      html-webpack-plugin: 4.0.0-beta.11_webpack@4.42.0
-      identity-obj-proxy: 3.0.0
-      jest: 24.9.0
-      jest-environment-jsdom-fourteen: 1.0.1
-      jest-resolve: 24.9.0
-      jest-watch-typeahead: 0.4.2
-      mini-css-extract-plugin: 0.9.0_webpack@4.42.0
-      nw-builder: 3.5.7
-      optimize-css-assets-webpack-plugin: 5.0.3_webpack@4.42.0
-      pnp-webpack-plugin: 1.6.4
-      postcss-flexbugs-fixes: 4.1.0
-      postcss-loader: 3.0.0
-      postcss-normalize: 8.0.1
-      postcss-preset-env: 6.7.0
-      postcss-safe-parser: 4.0.1
-      react-app-polyfill: 1.0.6
-      react-dev-utils: 10.2.1
-      resolve: 1.15.0
-      resolve-url-loader: 3.1.1
-      sass-loader: 8.0.2_node-sass@4.14.1+webpack@4.42.0
-      semver: 6.3.0
-      style-loader: 0.23.1
-      terser-webpack-plugin: 2.3.5_webpack@4.42.0
-      ts-pnp: 1.1.6
-      url-loader: 2.3.0_file-loader@4.3.0+webpack@4.42.0
-      webpack: 4.42.0
-      webpack-dev-server: 3.10.3_webpack@4.42.0
-      webpack-manifest-plugin: 2.2.0_webpack@4.42.0
-      workbox-webpack-plugin: 4.3.1_webpack@4.42.0
-    dev: false
-    engines:
-      node: '>=8.10'
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.1.2
-    peerDependencies:
-      node-sass: '*'
-      typescript: ^3.2.1
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    resolution:
-      integrity: sha512-1dMSRMYQIYRKAGFvB0zgPVAFkJlAskrlnGWIaW7iHdD3o3gSb+y9vY3qtqlu90GO7c1lUAzsTA81onZR3wXMQw==
   /nwsapi/2.2.0:
     dev: false
     resolution:
@@ -10898,7 +10892,7 @@ packages:
       integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
   /regenerator-transform/0.14.5:
     dependencies:
-      '@babel/runtime': 7.9.0
+      '@babel/runtime': 7.13.17
     dev: false
     resolution:
       integrity: sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
@@ -13430,16 +13424,69 @@ packages:
       tarball: https://codeload.github.com/adam-lynch/node-temp/tar.gz/279c1350cb7e4f02515d91da9e35d39a40774016
     version: 0.8.3
 specifiers:
+  '@babel/core': 7.9.0
+  '@svgr/webpack': 4.3.3
   '@testing-library/jest-dom': ^4.2.4
   '@testing-library/react': ^9.5.0
   '@testing-library/user-event': ^7.2.1
+  '@typescript-eslint/eslint-plugin': ^2.10.0
+  '@typescript-eslint/parser': ^2.10.0
+  babel-eslint: 10.1.0
+  babel-jest: ^24.9.0
+  babel-loader: 8.1.0
+  babel-plugin-named-asset-import: ^0.3.6
+  babel-preset-react-app: ^9.1.2
+  camelcase: ^5.3.1
+  case-sensitive-paths-webpack-plugin: 2.3.0
+  css-loader: 3.4.2
+  dotenv: 8.2.0
+  dotenv-expand: 5.1.0
+  eslint: ^6.6.0
+  eslint-config-nw-react-app: ^5.2.1
+  eslint-loader: 3.0.3
+  eslint-plugin-flowtype: 4.6.0
+  eslint-plugin-import: 2.20.1
+  eslint-plugin-jsx-a11y: 6.2.3
+  eslint-plugin-react: 7.19.0
+  eslint-plugin-react-hooks: ^1.6.1
+  file-loader: 4.3.0
   firebase: ^7.24.0
+  fs-extra: ^8.1.0
+  html-webpack-plugin: 4.0.0-beta.11
+  identity-obj-proxy: 3.0.0
+  jest: 24.9.0
+  jest-environment-jsdom-fourteen: 1.0.1
+  jest-resolve: 24.9.0
+  jest-watch-typeahead: 0.4.2
   jszip: ^3.6.0
+  mini-css-extract-plugin: 0.9.0
+  monaco-editor-webpack-plugin: ^3.0.1
   node-sass: ^4.14.1
   numworks.js: ^1.1.0
-  nw-react-scripts: 3.4.1
+  nw-builder: ^3.5.7
+  optimize-css-assets-webpack-plugin: 5.0.3
+  pnp-webpack-plugin: 1.6.4
+  postcss-flexbugs-fixes: 4.1.0
+  postcss-loader: 3.0.0
+  postcss-normalize: 8.0.1
+  postcss-preset-env: 6.7.0
+  postcss-safe-parser: 4.0.1
   react: ^16.14.0
+  react-app-polyfill: ^1.0.6
+  react-dev-utils: ^10.2.1
   react-dom: ^16.14.0
   react-monaco-editor: ^0.39.1
   react-resize-detector: ^5.2.0
   react-router-dom: ^5.2.0
+  resolve: 1.15.0
+  resolve-url-loader: 3.1.1
+  sass-loader: 8.0.2
+  semver: 6.3.0
+  style-loader: 0.23.1
+  terser-webpack-plugin: 2.3.5
+  ts-pnp: 1.1.6
+  url-loader: 2.3.0
+  webpack: 4.42.0
+  webpack-dev-server: 3.10.3
+  webpack-manifest-plugin: 2.2.0
+  workbox-webpack-plugin: 4.3.1
