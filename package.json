@@ -8,7 +8,6 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^7.17.2",
     "jszip": "^3.7.1",
-    "node-sass": "^7.0.1",
     "numworks.js": "^1.1.0",
     "nw-react-scripts": "3.4.1",
     "react": "^17.0.2",
@@ -51,5 +50,8 @@
     "buildDir": "./build",
     "cacheDir": "./cache",
     "macIcns": "./src/logo.icns"
+  },
+  "devDependencies": {
+    "sass": "^1.49.9"
   }
 }
