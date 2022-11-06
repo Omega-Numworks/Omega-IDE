@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import "../sass/omega.ide.sass";
 
 import File from "./components/File";
@@ -58,7 +58,7 @@ import {
 import Monaco from "./components/Monaco";
 import Loader from "./components/Loader";
 import JSZip from "jszip";
-import Numworks from "numworks.js";
+import Numworks from "upsilon.js";
 
 export default class IDEEditor extends Component {
     constructor(props) {
@@ -1819,7 +1819,7 @@ export default class IDEEditor extends Component {
                 return this.renderEditor();
             }
         } else if (this.state.logged === false) {
-            return <Redirect to={this.props.base} />;
+            return <Navigate replace to={this.props.base} />;
         } else {
             return this.renderLoading();
         }
