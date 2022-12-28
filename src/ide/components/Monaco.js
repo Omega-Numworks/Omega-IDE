@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import MonacoEditor from 'react-monaco-editor';
+import MonacoEditor from '@monaco-editor/react';
 import ReactResizeDetector from 'react-resize-detector';
 
 export default class Monaco extends Component {
@@ -47,7 +47,7 @@ export default class Monaco extends Component {
                         theme="vs-dark"
                         value={this.props.value}
                         onChange={this.handleChange}
-                        editorDidMount={this.editorDidMount}
+                        onMount={this.editorDidMount}
                     />
                 </div>
             </ReactResizeDetector>
