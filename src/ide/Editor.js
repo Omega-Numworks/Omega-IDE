@@ -58,7 +58,7 @@ import {
 import Monaco from "./components/Monaco";
 import Loader from "./components/Loader";
 import JSZip from "jszip";
-import Numworks from "numworks.js";
+import Numworks from "upsilon.js";
 
 export default class IDEEditor extends Component {
     constructor(props) {

@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^7.17.2",
     "jszip": "^3.7.1",
-    "numworks.js": "^1.1.0",
+    "upsilon.js": "^1.4.0",
     "nw-react-scripts": "3.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
