@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Navigate } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import "../sass/omega.ide.sass";
 
 import File from "./components/File";
@@ -1819,7 +1819,7 @@ export default class IDEEditor extends Component {
                 return this.renderEditor();
             }
         } else if (this.state.logged === false) {
-            return <Navigate replace to={this.props.base} />;
+            return <Redirect to={this.props.base} />;
         } else {
             return this.renderLoading();
         }
